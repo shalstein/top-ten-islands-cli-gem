@@ -1,16 +1,19 @@
 class TopTenIslandsCliGem::Scraper
 
-  def get_page
+  def self.get_page
     Nokogiri::HTML(open("https://www.tripadvisor.com/TravelersChoice-Islands"))
+    #binding.pry
   end
 
-  def get_top_islands
+  def self.create_islands
     #binding.pry
-    island_array = self.get_page.css(" .mainName").map do |island|
-       island.text.strip
+    island_array = get_page.css(" .mainName").map do |island|
+       i = TopTenIslandsCliGem::Island.new(island.text.strip,"https://www.tripadvisor.com#{island.css("a").attribute("href").text}")
     end
-    island_array.each.with_index(1) {|island, index| puts "#{index}. #{island}"}
   end
+
+
+
 
 
 end
