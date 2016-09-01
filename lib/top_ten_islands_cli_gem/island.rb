@@ -4,10 +4,9 @@ class TopTenIslandsCliGem::Island
 
   ALL = []
 
-  def initialize(name=nil, url=nil)
+  def initialize(name=nil, url=nil, discription=nil)
     @name = name
     @url = url
-    self.get_discription
     ALL.push(self)
   end
 

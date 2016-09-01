@@ -1,0 +1,2 @@
+class TopTenIslandsCliGem::Cli
+end
