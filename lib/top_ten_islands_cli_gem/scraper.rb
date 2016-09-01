@@ -5,9 +5,12 @@ class TopTenIslandsCliGem::Scraper
   end
 
   def get_top_islands
-    self.get_page.css(" .mainName").map do |island|
+    #binding.pry
+    island_array = self.get_page.css(" .mainName").map do |island|
        island.text.strip
     end
+    island_array.each.with_index(1) {|island, index| puts "#{index}. #{island}"}
   end
+
 
 end
