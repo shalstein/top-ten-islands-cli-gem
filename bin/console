@@ -10,5 +10,8 @@ require_relative '../config/environment.rb'
 # require "pry"
 # Pry.start
 
+x = TopTenIslandsCliGem::Scraper.create_islands
+z = TopTenIslandsCliGem::Cli.new.start
+
 require "irb"
 IRB.start
