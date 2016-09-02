@@ -6,7 +6,6 @@ class TopTenIslandsCliGem::Cli
       puts " "
       list
       discription
-      ending
   end
 
   def list
@@ -27,6 +26,7 @@ class TopTenIslandsCliGem::Cli
     puts ""
     puts TopTenIslandsCliGem::Island.all[input-1].get_discription
     puts ""
+    ending
   end
 
   def ending

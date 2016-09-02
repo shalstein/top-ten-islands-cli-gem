@@ -11,8 +11,7 @@ class TopTenIslandsCliGem::Island
   end
 
   def get_discription
-    island_page = Nokogiri::HTML(open(@url))
-    @discription = island_page.css(" .ermb_text").css(" .content").text.strip
+    @discription ||= Nokogiri::HTML(open(@url)).css(" .ermb_text").css(" .content").text.strip
   end
 
   def self.all
