@@ -1,11 +1,12 @@
 class TopTenIslandsCliGem::Cli
 
   def start
-      puts " "
-      puts "Welcome to the Worlds Top Islands!!"
-      puts " "
-      list
-      discription
+    TopTenIslandsCliGem::Scraper.create_islands
+    puts " "
+    puts "Welcome to the Worlds Top Islands to visit!!"
+    puts " "
+    list
+    discription
   end
 
   def list
