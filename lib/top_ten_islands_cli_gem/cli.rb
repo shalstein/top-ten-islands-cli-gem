@@ -22,9 +22,10 @@ class TopTenIslandsCliGem::Cli
     end
     #binding.pry
     puts ""
-    TopTenIslandsCliGem::Island.all[input-1].name
+    puts "--------#{TopTenIslandsCliGem::Island.all[input-1].name}--------"
     puts ""
     puts TopTenIslandsCliGem::Island.all[input-1].get_discription
+    puts ""
 
   end
 
