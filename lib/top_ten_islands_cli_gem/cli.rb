@@ -6,6 +6,7 @@ class TopTenIslandsCliGem::Cli
       puts " "
       list
       discription
+      ending
   end
 
   def list
@@ -26,8 +27,24 @@ class TopTenIslandsCliGem::Cli
     puts ""
     puts TopTenIslandsCliGem::Island.all[input-1].get_discription
     puts ""
+  end
+
+  def ending
+    input = ""
+    until input == "y" || input == "n"
+      puts "Would you like to read about another island? Y or N"
+      input = gets.chomp.downcase
+    end
+      case input
+      when  "y"
+        discription
+      when  "n"
+        puts "Have an awesome day!!"
+        exit
+      end
 
   end
+
 
 
 
