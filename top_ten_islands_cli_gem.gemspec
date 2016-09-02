@@ -6,7 +6,7 @@ require 'top_ten_islands_cli_gem/version'
 Gem::Specification.new do |spec|
   spec.name          = "top_ten_islands_cli_gem"
   spec.version       = TopTenIslandsCliGem::VERSION
-  spec.authors       = ["Baruch Steinmetz"]
+  spec.authors       = ["Shalom Steinmetz"]
   spec.email         = ["boruchsteinmetz@outlook.com"]
 
   spec.summary       = "Provides a list of the best islands in the world"
@@ -29,4 +29,7 @@ Gem::Specification.new do |spec|
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "nokogiri", "~> 10.0"
+  spec.add_development_dependency "open-uri", "~> 10.0"
+
 end
