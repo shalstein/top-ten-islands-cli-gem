@@ -9,7 +9,7 @@ Gem::Specification.new do |spec|
   spec.authors       = ["Shalom Steinmetz"]
   spec.email         = ["sholomsteinmetz@gmail.com"]
 
-  spec.summary       = "Provides a list of the best islands in the world"
+  spec.summary       = "Provides a list of the best islands in the entire world"
 
   spec.homepage      = "https://github.com/peacestone/top-ten-islands-cli-gem"
   spec.license       = "MIT"
@@ -23,13 +23,12 @@ Gem::Specification.new do |spec|
   end
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "bin"
+  spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
-  spec.require_paths = ["lib","lib/top_ten_islands_cli_gem"]
+  spec.require_paths = ["lib"]
 
   spec.add_development_dependency "bundler", "~> 1.12"
   spec.add_development_dependency "rake", "~> 10.0"
-  spec.add_development_dependency "nokogiri"
-  spec.add_development_dependency "open-uri"
+
 
 end
