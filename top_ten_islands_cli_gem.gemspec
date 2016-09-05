@@ -6,7 +6,7 @@ require 'top_ten_islands_cli_gem/version'
 Gem::Specification.new do |spec|
   spec.name          = "top_ten_islands_cli_gem"
   spec.version       = TopTenIslandsCliGem::VERSION
-  spec.authors       = ["Shalom Steinmetz"]
+  spec.authors       = ["Sholom Steinmetz"]
   spec.email         = ["sholomsteinmetz@gmail.com"]
 
   spec.summary       = "Provides a list of the best islands in the entire world"
