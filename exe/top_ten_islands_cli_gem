@@ -1,0 +1,7 @@
+#!/usr/bin/env ruby
+require 'bundler'
+Bundler.require
+
+require_relative '../config/environment.rb'
+
+TopTenIslandsCliGem::Cli.new.start
