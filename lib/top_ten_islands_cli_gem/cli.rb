@@ -41,7 +41,7 @@ class TopTenIslandsCliGem::Cli
         discription
       when  "n"
         puts "Have an awesome day!!"
-        exit
+        #exit
       end
 
   end
