@@ -1,6 +1,7 @@
 #!/usr/bin/env ruby
 
-#require "bundler/setup"
+require 'bundler'
+Bundler.require
 #require "top_ten_islands_cli_gem"
 
 require_relative '../config/environment'
@@ -12,7 +13,7 @@ require 'top_ten_islands_cli_gem'
 # require "pry"
 # Pry.start
 
-TopTenIslandsCliGem::Cli.new.start
+#TopTenIslandsCliGem::Cli.new.start
 
 require "irb"
 IRB.start
