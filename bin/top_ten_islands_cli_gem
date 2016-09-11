@@ -1,7 +1,0 @@
-#!/usr/bin/env ruby
-
-
-
-require_relative '../lib/top_ten_islands_cli_gem'
-
-TopTenIslandsCliGem::Cli.new.start
