@@ -11,7 +11,7 @@ class TopTenIslandsCliGem::Island
   end
 
   def get_discription
-    @discription ||= Nokogiri::HTML(open(@url)).css(" .ermb_text").css(" .content").text.strip
+    @discription ||= TopTenIslandsCliGem::Scraper.get_island_discription(@url)
   end
 
   def self.all
