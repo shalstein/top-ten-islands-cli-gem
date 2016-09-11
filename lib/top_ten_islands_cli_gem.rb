@@ -1,4 +1,9 @@
-require "top_ten_islands_cli_gem/version"
+#require "open-uri"
+#require 'nokogiri'
+#require 'rake'
+
 
 module TopTenIslandsCliGem
 end
+
+require_relative '../config/environment'

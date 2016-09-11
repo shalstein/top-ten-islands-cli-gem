@@ -16,12 +16,15 @@ Gem::Specification.new do |spec|
 
 
   spec.files         = `git ls-files -z`.split("\x0").reject { |f| f.match(%r{^(test|spec|features)/}) }
-  spec.bindir        = "bin"
+  spec.bindir        = "exe"
   spec.executables   = spec.files.grep(%r{^exe/}) { |f| File.basename(f) }
   spec.require_paths = ["lib", "lib/top-ten-islands-cli-gem"]
 
-  spec.add_development_dependency "bundler", "~> 1.12"
+  spec.add_development_dependency "bundler", "~> 1.11"
   spec.add_development_dependency "rake", "~> 10.0"
+  spec.add_development_dependency "nokogiri", "~> 1.6", ">= 1.6.6.2"
+  spec.add_development_dependency "pry", "~> 0.10.3"
+  spec.add_development_dependency "rubysl-open-uri", "~> 2.0", ">= 2.0"
 
 
-end
+ end
