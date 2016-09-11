@@ -4,7 +4,7 @@ $LOAD_PATH.unshift(lib) unless $LOAD_PATH.include?(lib)
 require 'top_ten_islands/version'
 
 Gem::Specification.new do |spec|
-  spec.name          = "top_ten_islands"
+  spec.name          = "top_ten_islands_cli_gem"
   spec.version       = TopTenIslands::VERSION
   spec.authors       = ["Sholom Steinmetz"]
   spec.email         = ["sholomsteinmetz@gmail.com"]

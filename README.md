@@ -1,28 +1,16 @@
-# TopTenIslandsCliGem
+## TopTenIslands
 
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/top_ten_islands_cli_gem`. To experiment with that code, run `bin/console` for an interactive prompt.
+Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/top_ten_islands`. To experiment with that code, run `bin/console` for an interactive prompt.
 
 TODO: Delete this and the text above, and describe your gem
 
 ## Installation
 
-Add this line to your application's Gemfile:
-
-```ruby
-gem 'top_ten_islands_cli_gem'
-```
-
-And then execute:
-
-    $ bundle
-
-Or install it yourself as:
-
-    $ gem install top_ten_islands_cli_gem
+You can install this gem via `gem install top_ten_islands_cli_gem`. The `top_ten_islands_cli_gem` CLI will be installed and you can run `top_ten_islands_cli_gem` to get a list of islands to travel to in your command line.
 
 ## Usage
 
-TODO: Write usage instructions here
+Run top_ten_islands_cli_gem after installing the gem.
 
 ## Development
 
@@ -32,10 +20,9 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/top_ten_islands_cli_gem.
+Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/top_ten_islands.
 
 
 ## License
 
 The gem is available as open source under the terms of the [MIT License](http://opensource.org/licenses/MIT).
-
