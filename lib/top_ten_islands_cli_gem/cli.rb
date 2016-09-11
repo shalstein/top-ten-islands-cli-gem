@@ -1,7 +1,7 @@
-class TopTenIslands::Cli
+class TopTenIslandsCliGem::Cli
 
   def start
-    TopTenIslands::Scraper.create_islands
+    TopTenIslandsCliGem::Scraper.create_islands
     puts " "
     puts "Welcome to the Worlds Top Islands to visit!!"
     puts " "
@@ -10,7 +10,7 @@ class TopTenIslands::Cli
   end
 
   def list
-    TopTenIslands::Island.all.each.with_index(1) {|island, index| puts "#{index}. #{island.name}"}
+    TopTenIslandsCliGem::Island.all.each.with_index(1) {|island, index| puts "#{index}. #{island.name}"}
   end
 
   def discription
@@ -23,9 +23,9 @@ class TopTenIslands::Cli
     end
     #binding.pry
     puts ""
-    puts "--------#{TopTenIslands::Island.all[@input-1].name}--------"
+    puts "--------#{TopTenIslandsCliGem::Island.all[@input-1].name}--------"
     puts ""
-    puts TopTenIslands::Island.all[@input-1].get_discription
+    puts TopTenIslandsCliGem::Island.all[@input-1].get_discription
     puts ""
     ending
   end
@@ -40,7 +40,7 @@ class TopTenIslands::Cli
       when  "y"
         discription
       when  "n"
-        puts "Hope to see you come over and visit #{TopTenIslands::Island.all[@input-1].name} real soon!!"
+        puts "Hope to see you at #{TopTenIslandsCliGem::Island.all[@input-1].name} soon!!"
       end
 
   end
