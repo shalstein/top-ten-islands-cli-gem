@@ -1,9 +1,3 @@
-## TopTenIslands
-
-Welcome to your new gem! In this directory, you'll find the files you need to be able to package up your Ruby library into a gem. Put your Ruby code in the file `lib/top_ten_islands`. To experiment with that code, run `bin/console` for an interactive prompt.
-
-TODO: Delete this and the text above, and describe your gem
-
 ## Installation
 
 You can install this gem via `gem install top_ten_islands_cli_gem`. The `top_ten_islands_cli_gem` CLI will be installed and you can run `top_ten_islands_cli_gem` to get a list of islands to travel to in your command line.
