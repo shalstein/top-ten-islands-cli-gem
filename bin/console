@@ -1,6 +1,6 @@
 #!/usr/bin/env ruby
 
-require "bundler/setup"
+#require "bundler/setup"
 require "top_ten_islands_cli_gem"
 
 # You can add fixtures and/or initialization code here to make experimenting

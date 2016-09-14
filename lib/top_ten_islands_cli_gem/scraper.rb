@@ -5,9 +5,14 @@ class TopTenIslandsCliGem::Scraper
   end
 
   def self.create_islands
-    island_array = get_page.css(" .mainName").map do |island|
-       i = TopTenIslandsCliGem::Island.new(island.text.strip,"https://www.tripadvisor.com#{island.css("a").attribute("href").text}")
+    islands_array = []
+    get_page.css(" .mainName").each do |island|
+      island_hash = {}
+       island_hash[:name] = island.text.strip
+       island_hash[:url] = "https://www.tripadvisor.com#{island.css("a").attribute("href").text}"
+       islands_array.push(island_hash)
     end
+    islands_array
   end
 
   def self.get_island_discription(url=nil)

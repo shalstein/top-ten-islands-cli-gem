@@ -18,5 +18,15 @@ class TopTenIslandsCliGem::Island
     ALL
   end
 
+  def self.create_islands
+    islands_array = TopTenIslandsCliGem::Scraper.create_islands
+
+    islands_array.each do |name, url|
+      islands = self.new(name, url)
+    end
+
+  end
+
+
 
 end
