@@ -4,10 +4,11 @@ class TopTenIslandsCliGem::Scraper
     Nokogiri::HTML(open("https://www.tripadvisor.com/TravelersChoice-Islands"))
   end
 
-  def self.create_islands
+  def self.get_islands_array
     islands_array = []
+
     get_page.css(" .mainName").each do |island|
-      island_hash = {}
+       island_hash = {}
        island_hash[:name] = island.text.strip
        island_hash[:url] = "https://www.tripadvisor.com#{island.css("a").attribute("href").text}"
        islands_array.push(island_hash)

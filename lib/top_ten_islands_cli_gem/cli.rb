@@ -1,7 +1,7 @@
 class TopTenIslandsCliGem::Cli
 
   def start
-    TopTenIslandsCliGem::Scraper.create_islands
+    TopTenIslandsCliGem::Island.create_islands_from_hash
     puts " "
     puts "Welcome to the Worlds Top Islands to visit!!"
     puts " "

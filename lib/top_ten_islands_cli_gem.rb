@@ -11,5 +11,5 @@ module TopTenIslandsCliGem
 end
 
 
-x = TopTenIslandsCliGem::Island
-x.create_islands
+#x = TopTenIslandsCliGem::Island
+#x.create_islands
