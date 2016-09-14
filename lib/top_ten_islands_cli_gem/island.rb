@@ -20,9 +20,8 @@ class TopTenIslandsCliGem::Island
 
   def self.create_islands
     islands_array = TopTenIslandsCliGem::Scraper.create_islands
-
-    islands_array.each do |name, url|
-      islands = self.new(name, url)
+      islands_array.each do |island_hash|
+      islands = self.new(island_hash[:name], island_hash[:url])
     end
 
   end
