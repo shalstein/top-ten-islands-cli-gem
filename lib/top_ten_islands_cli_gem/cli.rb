@@ -20,7 +20,7 @@ class TopTenIslandsCliGem::Cli
      until @input.to_i.between?(1,10) || @input == "list"
       puts " "
       puts "What number island would you like to read about? Or type list"
-      @input = gets.chomp
+      @input = gets.chomp.downcase
     end
 
     if @input.to_i.between?(1,10)
@@ -32,18 +32,16 @@ class TopTenIslandsCliGem::Cli
       puts TopTenIslandsCliGem::Island.all[@input-1].get_discription
       puts ""
       ending
-    elsif @input == "list"
+    elsif @input.downcase == "list"
       list
-      discription
-    else
       discription
     end
   end
 
   def ending
     input = ""
-    until input == "y" || input == "n"
-      puts "Would you like to read about another island? Y or N"
+    until input == "y" || input == "n" || input == "list"
+      puts "Would you like to read about another island? Y,N or list"
       input = gets.chomp.downcase
     end
       case input
@@ -51,6 +49,9 @@ class TopTenIslandsCliGem::Cli
         discription
       when  "n"
         puts "Hope to see you at #{TopTenIslandsCliGem::Island.all[@input-1].name} soon!!"
+      when "list"
+        list
+        discription
       end
 
   end
