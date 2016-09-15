@@ -16,18 +16,26 @@ class TopTenIslandsCliGem::Cli
   def discription
     @input = 0
     #binding.pry
-    until @input.between?(1,10)
+    until @input.between?(1,10) || @input == "list"
       puts " "
-      puts "What number island would you like to read about?"
-      @input = gets.chomp.to_i
+      puts "What number island would you like to read about? Or type list"
+
+      string = gets.chomp
+      @input = string.to_i if string.downcase != "list"
     end
     #binding.pry
-    puts ""
-    puts "--------#{TopTenIslandsCliGem::Island.all[@input-1].name}--------"
-    puts ""
-    puts TopTenIslandsCliGem::Island.all[@input-1].get_discription
-    puts ""
-    ending
+    if @input > 0
+      #binding.pry
+      puts ""
+      puts "--------#{TopTenIslandsCliGem::Island.all[@input-1].name}--------"
+      puts ""
+      puts TopTenIslandsCliGem::Island.all[@input-1].get_discription
+      puts ""
+      ending
+    elsif @input == "list"
+      list
+      discription
+    end
   end
 
   def ending
