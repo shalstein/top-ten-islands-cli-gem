@@ -23,7 +23,7 @@ class TopTenIslandsCliGem::Cli
       @input = gets.chomp
     end
 
-    if @input.to_i > 0
+    if @input.to_i.between?(1,10)
       #binding.pry
       @input = @input.to_i
       puts ""
