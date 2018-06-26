@@ -10,7 +10,7 @@ class TopTenIslandsCliGem::Cli
   end
 
   def list
-    TopTenIslandsCliGem::Island.all.each.with_index(1) {|island, index| puts "#{index}. #{island.name}"}
+    TopTenIslandsCliGem::Island.all.each {|island| puts "#{island.name}"}
   end
 
   def discription

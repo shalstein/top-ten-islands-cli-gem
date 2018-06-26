@@ -7,8 +7,8 @@ require_relative "top_ten_islands_cli_gem/scraper.rb"
 require_relative "top_ten_islands_cli_gem/island.rb"
 require_relative "top_ten_islands_cli_gem/cli.rb"
 
-module TopTenIslandsCliGem
-end
+# module TopTenIslandsCliGem
+# end
 
 
 #x = TopTenIslandsCliGem::Island

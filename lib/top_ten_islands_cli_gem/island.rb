@@ -15,7 +15,7 @@ class TopTenIslandsCliGem::Island
   end
 
   def self.all
-    ALL
+    ALL.reverse
   end
 
   def self.create_islands_from_hash
