@@ -14,7 +14,7 @@ To install this gem onto your local machine, run `bundle exec rake install`. To 
 
 ## Contributing
 
-Bug reports and pull requests are welcome on GitHub at https://github.com/[USERNAME]/top_ten_islands.
+Bug reports and pull requests are welcome on GitHub at https://github.com/peacestone/top_ten_islands.
 
 
 ## License
